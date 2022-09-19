@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "220433250959",
+    "firebase_url": "https://arc-water-tank-default-rtdb.firebaseio.com",
+    "project_id": "arc-water-tank",
+    "storage_bucket": "arc-water-tank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220433250959:android:7b0051843161fe824f8efa",
+        "android_client_info": {
+          "package_name": "arc_watertank.pack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220433250959-q1pdbo75r7ram8cdmsfit0qdm303595g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1DiVSm6VtSiwxr3UUkH37C_ROoWgdkX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220433250959-q1pdbo75r7ram8cdmsfit0qdm303595g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

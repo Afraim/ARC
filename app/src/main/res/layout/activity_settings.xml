@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1.70"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            app:srcCompat="@mipmap/ic_arc_icon_round"
+            android:contentDescription="ICON" />
+
+        <TextView
+            android:id="@+id/wifi_push"
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:layout_height="wrap_content"
+            android:text="📶"
+            android:textAlignment="center"
+            android:layout_marginRight="-1dp"
+            android:textSize="25sp"
+            android:clickable="true"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The limit of the tank calculated from here:"
+        android:layout_marginTop="25dp"
+        android:textSize="12sp"
+        android:textColor="#706F6F"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Steps"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#4A4A4A"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step1: Input the Height of the tank and press submit"
+                android:layout_marginTop="25dp"
+                android:textSize="13sp"
+                android:textColor="#4A4A4A"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step2: Press the Tank Config button (TNK) on the device"
+                android:layout_marginTop="25dp"
+                android:textSize="13sp"
+                android:textColor="#4A4A4A"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="Tank Height in cm: "/>
+            <EditText
+                android:layout_marginStart="10dp"
+                android:id="@+id/editTextHeight"
+                android:layout_width="0dp"
+                android:textSize="24sp"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:hint="20"
+                android:textColor="@color/black"
+                android:inputType="numberSigned"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="cm"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:id="@+id/Submit"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            />
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:id="@+id/Cancel"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
